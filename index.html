@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Badminton Plan</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f8fafc;
+      color: #333;
+    }
+    header {
+      background: #007acc;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .menu {
+      background: #e0f4ff;
+      padding: 0.5rem;
+      text-align: center;
+      position: sticky;
+      top: 56px;
+      z-index: 9;
+    }
+    .menu a {
+      margin: 0 1rem;
+      color: #007acc;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 0.75rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    .content {
+      display: none;
+      margin-top: 0.5rem;
+    }
+    iframe {
+      width: 100%;
+      height: 220px;
+      border: none;
+      border-radius: 8px;
+      margin: 0.5rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background: #e0f4ff;
+    }
+    a.link {
+      color: #007acc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏸 Badminton Game Plan</h1>
+  </header>
+
+  <div class="menu">
+    <a href="#focus">Focus Areas</a>
+    <a href="#days">Days</a>
+  </div>
+
+  <div class="container">
+
+    <div id="focus">
+      <h2>🎯 Focus Areas</h2>
+
+      <div class="card">
+        <h3 onclick="toggleContent(this)">Serve & Return <span>+</span></h3>
+        <div class="content">
+          <p><em>Suggested Day: 1</em></p>
+          <iframe src="https://www.youtube.com/embed/ZHEmM_U5PP4"></iframe>
+          <p>Low serves mostly, flick for surprise. Return deep or flat.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 onclick="toggleContent(this)">Position & Movement <span>+</span></h3>
+        <div class="content">
+          <p><em>Suggested Day: 2</em></p>
+          <p>Move to base. In doubles: lift = side-by-side, attack = front-back.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 onclick="toggleContent(this)">Net Play & Interception <span>+</span></h3>
+        <div class="content">
+          <p><em>Suggested Day: 3</em></p>
+          <iframe src="https://www.youtube.com/embed/IAeanyzpWCA"></iframe>
+          <p>Tight net shots, intercept weak shots.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 onclick="toggleContent(this)">Defense & Lifting <span>+</span></h3>
+        <div class="content">
+          <p><em>Suggested Day: 4</em></p>
+          <iframe src="https://www.youtube.com/embed/BQfXztjZcIA"></iframe>
+          <iframe src="https://www.youtube.com/embed/mS0sWiV82AM"></iframe>
+          <p>Lift high, block soft, or drive flat.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 onclick="toggleContent(this)">Smash & Attack <span>+</span></h3>
+        <div class="content">
+          <p><em>Suggested Day: 5</em></p>
+          <iframe src="https://www.youtube.com/embed/c_siA4X1BLE"></iframe>
+          <iframe src="https://www.youtube.com/embed/Seony5Owsb8"></iframe>
+          <p>Smash body/gap, follow forward, mix with fast drops.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 onclick="toggleContent(this)">Flat Drive Rally <span>+</span></h3>
+        <div class="content">
+          <p><em>Suggested Day: 6</em></p>
+          <iframe src="https://www.youtube.com/embed/u-cjkrynCKI"></iframe>
+          <p>Flat drives, fast hands, keep racket up.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 onclick="toggleContent(this)">Deception & Full Lesson Playlists <span>+</span></h3>
+        <div class="content">
+          <p><strong>The Ultimate Badminton Lessons Playlist:</strong> A comprehensive tutorial for beginners and experts, compiled on Reddit. Curated with logical order — most important skills first, increasing difficulty.</p>
+          <p>⚡ <a class="link" href="https://www.youtube.com/playlist?list=PLFV7c4tWHbUpvXdmmRvwVwv33gAroJ2Nt" target="_blank">Strokes Playlist</a></p>
+          <p>⚡ <a class="link" href="https://www.youtube.com/playlist?list=PLFV7c4tWHbUpw_zu3qZwoJAhWo2Lp5xVp" target="_blank">Footwork Playlist</a></p>
+          <p>⚡ <a class="link" href="https://www.youtube.com/playlist?list=PLFV7c4tWHbUpu0R8nk-8IgSB13wAHXilv" target="_blank">Strategy Playlist</a></p>
+          <p>⚡ <a class="link" href="https://www.youtube.com/playlist?list=PLFV7c4tWHbUrk8bII6qEAt1ndfaHQ-VqW" target="_blank">Advanced Strokes Playlist</a></p>
+          <p style="font-size:0.9rem;color:#555;">Tip: Compare teachers' techniques and adapt what works best for your style.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="days" class="card">
+      <h2>📅 Suggested Days</h2>
+      <table>
+        <tr><th>Day</th><th>Focus</th></tr>
+        <tr><td>1</td><td>Serve & Return</td></tr>
+        <tr><td>2</td><td>Position & Movement</td></tr>
+        <tr><td>3</td><td>Net Play & Interception</td></tr>
+        <tr><td>4</td><td>Defense & Lifting</td></tr>
+        <tr><td>5</td><td>Smash & Attack</td></tr>
+        <tr><td>6</td><td>Flat Drive Rally</td></tr>
+        <tr><td>7</td><td>Review or weakest focus</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleContent(el) {
+      const content = el.nextElementSibling;
+      const span = el.querySelector('span');
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+        span.textContent = '+';
+      } else {
+        content.style.display = 'block';
+        span.textContent = '–';
+      }
+    }
+  </script>
+
+</body>
+</html>
